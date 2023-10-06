@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+
+    
+    <title>Finale Project</title>
+ <!--here's my link to the CSS stylesheet-->
+    <link rel="stylesheet" href="AndrewSandwichstyles.css" type="text/css">
+    
+
+</head>
+
+<body>
+
+    <h1>
+        Andrew's "Good to Go" Sandwich Shop
+        
+    </h1>
+ <!--Purpose of the form!-->
+    <p class="shopPurpose">
+      This form was created to collect orders at a local sandwich shop - "Andrew's 'Good to Go' Sandwiches". Andrew wants everyones order to exceed expectations, so it's important to have a dependable order retrieval system. 
+       
+    </p>
+ <!--Example of text input-->
+    <form id="mylabel" action="#">
+        <span class="myname">FULL NAME:</span>
+        <input onblur="validateFullName()" class="myfullname" type="text" maxlength="20" id="fullname" placeholder=" First and Last Name" required>
+        <span class="feedback" id="feedbfname"></span>
+        <br>
+
+    </form>
+    
+    <h3>
+        Andrew's Signature Sandwiches
+    </h3>
+ <!--main fom :) -->
+    <form id="myform" action="#">
+ <!--examples of radio and checkbox + onblur and onclick validations. I have 7 inputs here-->
+  <span class="mylabel" >Bread Type:</span> <br>
+        <input class="myinput bread" type="radio" name="bread" id="White" value="White" checked> White Bread <br>
+        <input class="myinput bread" type="radio" name="bread" id="Wheat" value="Wheat"> Wheat Bread <br>
+        <span class="feedback" id="feedbbread"></span>
+        
+        <br>
+
+        <span class="mylabel" >Meats:</span> <br>
+        <input class="myinput" type="checkbox" name="meats" value="turkey" onblur="validateMeats()"> Turkey<br>      
+        <input class="myinput" type="checkbox" name="meats" value="ham" onblur="validateMeats()"> Ham <br>
+        <input class="myinput" type="checkbox" name="meats" value="beef" onblur="validateMeats()"> Beef <br>
+        <span class="feedback" id="feedbmeats"></span>
+
+        <br>
+    
+        <span class="mylabel">Cheese:</span> <br>
+        <input class="myinput" type="checkbox" name="cheese" value="mozarella" onblur="validateCheese()"> Mozarella <br>
+        <input class="myinput" type="checkbox" name="cheese" value="cheddar" onblur="validateCheese()"> Cheddar <br>
+        <input class="myinput" type="checkbox" name="cheese" value="provelone" onblur="validateCheese()"> Provelone <br>
+        <span class="feedback" id="feedbcheese"></span>
+      
+        <br>
+
+        <span class="mylabel" >Veggies:</span> <br>
+        <input class="myinput" type="checkbox" name="veggie" value="lettuce" onblur="validateVeggie()"> Lettuce <br>      
+        <input class="myinput" type="checkbox" name="veggie" value="pickles" onblur="validateVeggie()"> Pickles <br>
+        <input class="myinput" type="checkbox" name="veggie" value="tomatos" onblur="validateVeggie()"> Tomatos <br>
+        <span class="feedback" id="feedbveggie"></span>
+
+        <br>
+
+        <span class="mylabel" >Order Delivery Instructions:</span>
+        <input onblur="validateinfo()" class="myinput" type="text" maxlength="15" id="info" placeholder=" Up to 50 characters">
+        <span class="feedback" id="feedbinfo"></span>
+       
+        <br>
+       
+        <span class="mylabel" >Email Address:</span>
+        <input pattern="^\S+@\S+\.\S+$" onblur="validateEmailAndType()" class="myinput" type="email" id="email" placeholder=" Valid email address" required >
+        <span class="feedback" id="feedbemail"></span>
+      
+        <br>
+
+        <span class="mylabel" >Phone Number:</span>
+        <input onblur="validatePhone()" class="myinput" type="number" id="phone" placeholder="10 digit phone number">
+        <span class="feedback" id="feedbphone"></span>
+   
+        <br>
+         <!--upon clicking the "enter my ordeer" button there's one final validation to confirm everything in the form was properly submitted-->
+        <input class = "enterbtn" type="button" onclick="areAllValid()" value="Enter My Order" id="enterbtn">
+
+    </form>
+
+    <div id="submitConfirm">
+     
+   
+    </div>
+ <!--Here's my 1 image!-->
+    <div id="endingDiv">
+            <img id="endBanner" src="https://indianakitchen.com/wp-content/uploads/2015/03/Ham-Sandwich.jpg" alt="Sandwich Image">
+        </div>
+     <!--Link to my Javascript external stylesheet here-->
+    <script src="AndrewSandwichjavascriptFunctions.js" type="text/javascript"></script>
+
+</body>
+
+</html>

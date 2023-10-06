@@ -1,0 +1,121 @@
+
+/* All css styling below */
+body{
+    margin:0;
+    padding:0;
+    background-color: white;
+    font-family: sans-serif
+}
+
+h1{
+    padding: 10px;
+    margin: 1px auto;
+    width:800px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+h3{
+    padding: 10px;
+    margin: 5px auto;
+    width:800px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#heading{
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 10px auto;
+    width:800px;
+}
+
+#bannerDiv{
+    padding: 20px;
+    margin: 10px auto;
+    width:600px;
+}
+
+
+.shopPurpose{
+    padding: 10px;
+    margin: 10px auto;
+    width:600px;
+    font-weight: bold;
+}
+
+.myfullname{
+    padding: 10px;
+    margin: 10px auto;
+    width:500px;
+    border: 5px box black;
+    text-align: left;
+}
+
+.mylabel{
+    font-weight: bold;
+    color: black;
+    padding:3px 5px;
+    padding-left: px;
+    margin:3px 15px;
+    display: inline-block;
+    width:250px;
+    text-align: left;
+    
+}
+.myname{
+    font-weight: bold;
+    color: black;
+    padding-left: px;
+    margin:3px 15px;
+    display: inline-block;
+    width:150px;
+    text-align: left;
+  
+}
+
+.myinput{
+    border: 2px solid black;
+    padding: 2px; 
+    margin:3px 15px;
+ 
+}
+.enterbtn{
+    padding:5px 10px;
+    margin: 2px 10px;
+    color: black;
+}
+.feedback{
+    padding:5px 10px;
+    margin: 2px 10px;
+    color: rgb(255, 0, 0);
+}
+
+#submitConfirm{
+    width:600px;
+    padding: 20px;
+    margin:20px auto;
+}
+
+h4{
+    color: red;
+    text-align: left;
+
+}
+
+#endingDiv{
+    padding: 10px;
+    margin: 10px auto;
+    width:500px;
+}
+
+#endBanner{
+    width: 50%;
+}
